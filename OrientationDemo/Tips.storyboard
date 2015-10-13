@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hks-rC-HTW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hks-rC-HTW">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--VC2-->
+        <!--Select Tip-->
         <scene sceneID="kmd-ge-muS">
             <objects>
-                <viewController id="Vdi-fj-mVR" customClass="ViewController2" customModule="OrientationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vdi-fj-mVR" customClass="TipViewController" customModule="OrientationDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ScY-pM-8sz"/>
                         <viewControllerLayoutGuide type="bottom" id="sKz-Z9-MIv"/>
@@ -19,34 +19,36 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWV-8M-m18">
                                 <rect key="frame" x="205" y="273" width="189" height="53"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="8aF-sd-RRT"/>
                                     <constraint firstAttribute="width" constant="189" id="QJg-5N-hYs"/>
                                 </constraints>
-                                <state key="normal" title="Next"/>
+                                <state key="normal" title="Next to Signature"/>
                                 <connections>
-                                    <segue destination="Ckw-Vf-Sh5" kind="show" id="wA5-sm-hPf"/>
+                                    <segue destination="Ckw-Vf-Sh5" kind="show" id="LZZ-Ty-mK8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfa-Ch-wL7">
-                                <rect key="frame" x="205.5" y="394" width="189" height="30"/>
-                                <state key="normal" title="Close"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eg9-9M-yV9">
+                                <rect key="frame" x="283" y="380" width="34" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Back"/>
                                 <connections>
-                                    <action selector="closeVC:" destination="Vdi-fj-mVR" eventType="touchUpInside" id="xap-3B-9qp"/>
+                                    <action selector="backButtonClicked:" destination="Vdi-fj-mVR" eventType="touchUpInside" id="cZw-Ve-eNG"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.43914741299999999" green="1" blue="0.31344376959999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="kfa-Ch-wL7" firstAttribute="top" secondItem="UWV-8M-m18" secondAttribute="bottom" constant="67.5" id="MU8-Fz-amM"/>
+                            <constraint firstItem="eg9-9M-yV9" firstAttribute="centerX" secondItem="zHt-hL-Se4" secondAttribute="centerX" id="O9I-ie-j8W"/>
                             <constraint firstItem="UWV-8M-m18" firstAttribute="centerY" secondItem="zHt-hL-Se4" secondAttribute="centerY" id="Q6i-lz-jBq"/>
-                            <constraint firstItem="kfa-Ch-wL7" firstAttribute="trailing" secondItem="UWV-8M-m18" secondAttribute="trailing" id="S8c-FD-rYR"/>
+                            <constraint firstItem="eg9-9M-yV9" firstAttribute="top" secondItem="UWV-8M-m18" secondAttribute="bottom" constant="54" id="QNG-EO-7bP"/>
                             <constraint firstItem="UWV-8M-m18" firstAttribute="centerX" secondItem="zHt-hL-Se4" secondAttribute="centerX" id="WgB-57-PQc"/>
-                            <constraint firstItem="kfa-Ch-wL7" firstAttribute="leading" secondItem="UWV-8M-m18" secondAttribute="leading" id="q5c-Vp-bhz"/>
                             <constraint firstItem="UWV-8M-m18" firstAttribute="centerX" secondItem="zHt-hL-Se4" secondAttribute="centerX" id="x2K-iL-ibA"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="VC2" id="afq-Bx-pRT"/>
+                    <navigationItem key="navigationItem" title="Select Tip" id="afq-Bx-pRT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5dZ-yf-Dvs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,12 +65,26 @@
                     <view key="view" contentMode="scaleToFill" id="teS-JS-Apv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signature Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWv-kS-soj">
+                                <rect key="frame" x="235" y="290" width="132" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="1" green="0.62791708820000003" blue="0.1586146611" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CWv-kS-soj" firstAttribute="centerY" secondItem="teS-JS-Apv" secondAttribute="centerY" id="MZ3-LI-sLg"/>
+                            <constraint firstItem="CWv-kS-soj" firstAttribute="centerX" secondItem="teS-JS-Apv" secondAttribute="centerX" id="Xum-0q-BvF"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l20-kj-2fA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3424" y="329"/>
+            <point key="canvasLocation" x="3629" y="329"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kj5-94-Jaa">
@@ -78,6 +94,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MhU-UG-Zgq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4871D4D51BCDA91B00C174DA /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4871D4D41BCDA91B00C174DA /* TipViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		4882C1C81BC4977800BB7704 /* Tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4882C1C71BC4977800BB7704 /* Tips.storyboard */; settings = {ASSET_TAGS = (); }; };
 		4891941B1BC04FC700136BAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4891941A1BC04FC700136BAB /* AppDelegate.swift */; };
-		4891941D1BC04FC700136BAB /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4891941C1BC04FC700136BAB /* ViewController1.swift */; };
+		4891941D1BC04FC700136BAB /* SelectPaymentCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4891941C1BC04FC700136BAB /* SelectPaymentCardViewController.swift */; };
 		489194201BC04FC700136BAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4891941E1BC04FC700136BAB /* Main.storyboard */; };
 		489194221BC04FC700136BAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 489194211BC04FC700136BAB /* Assets.xcassets */; };
 		489194251BC04FC700136BAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489194231BC04FC700136BAB /* LaunchScreen.storyboard */; };
 		489194301BC04FC700136BAB /* OrientationDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4891942F1BC04FC700136BAB /* OrientationDemoTests.swift */; };
 		4891943B1BC04FC800136BAB /* OrientationDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4891943A1BC04FC800136BAB /* OrientationDemoUITests.swift */; };
-		489194491BC050EC00136BAB /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489194481BC050EC00136BAB /* ViewController2.swift */; settings = {ASSET_TAGS = (); }; };
+		489194491BC050EC00136BAB /* EnterCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489194481BC050EC00136BAB /* EnterCardViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4871D4D41BCDA91B00C174DA /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		4882C1C71BC4977800BB7704 /* Tips.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tips.storyboard; sourceTree = "<group>"; };
 		489194171BC04FC700136BAB /* OrientationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrientationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4891941A1BC04FC700136BAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4891941C1BC04FC700136BAB /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		4891941C1BC04FC700136BAB /* SelectPaymentCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPaymentCardViewController.swift; sourceTree = "<group>"; };
 		4891941F1BC04FC700136BAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		489194211BC04FC700136BAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		489194241BC04FC700136BAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,7 +52,7 @@
 		489194361BC04FC700136BAB /* OrientationDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrientationDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4891943A1BC04FC800136BAB /* OrientationDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationDemoUITests.swift; sourceTree = "<group>"; };
 		4891943C1BC04FC800136BAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		489194481BC050EC00136BAB /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		489194481BC050EC00136BAB /* EnterCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				4891941A1BC04FC700136BAB /* AppDelegate.swift */,
-				4891941C1BC04FC700136BAB /* ViewController1.swift */,
-				489194481BC050EC00136BAB /* ViewController2.swift */,
+				4891941C1BC04FC700136BAB /* SelectPaymentCardViewController.swift */,
+				489194481BC050EC00136BAB /* EnterCardViewController.swift */,
 				4891941E1BC04FC700136BAB /* Main.storyboard */,
 				4882C1C71BC4977800BB7704 /* Tips.storyboard */,
 				489194211BC04FC700136BAB /* Assets.xcassets */,
 				489194231BC04FC700136BAB /* LaunchScreen.storyboard */,
 				489194261BC04FC700136BAB /* Info.plist */,
+				4871D4D41BCDA91B00C174DA /* TipViewController.swift */,
 			);
 			path = OrientationDemo;
 			sourceTree = "<group>";
@@ -262,9 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4891941D1BC04FC700136BAB /* ViewController1.swift in Sources */,
+				4891941D1BC04FC700136BAB /* SelectPaymentCardViewController.swift in Sources */,
 				4891941B1BC04FC700136BAB /* AppDelegate.swift in Sources */,
-				489194491BC050EC00136BAB /* ViewController2.swift in Sources */,
+				4871D4D51BCDA91B00C174DA /* TipViewController.swift in Sources */,
+				489194491BC050EC00136BAB /* EnterCardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

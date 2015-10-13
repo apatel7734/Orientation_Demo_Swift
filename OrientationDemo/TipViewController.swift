@@ -1,18 +1,24 @@
 //
-//  ViewController2.swift
+//  ViewController3.swift
 //  OrientationDemo
 //
-//  Created by Patel, Ashish on 10/3/15.
+//  Created by Patel, Ashish on 10/13/15.
 //  Copyright © 2015 Patel, Ashish. All rights reserved.
 //
 
 import UIKit
 
-class ViewController2: UIViewController {
-    
+class TipViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
     
@@ -21,9 +27,8 @@ class ViewController2: UIViewController {
     }
     
     
-    @IBAction func closeVC(sender: AnyObject) {
+    @IBAction func backButtonClicked(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    
+
 }
