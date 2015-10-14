@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Vdi-fj-mVR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hks-rC-HTW">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -24,27 +24,38 @@
                                     <constraint firstAttribute="height" constant="53" id="8aF-sd-RRT"/>
                                     <constraint firstAttribute="width" constant="189" id="QJg-5N-hYs"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Next to Signature"/>
                                 <connections>
                                     <segue destination="Ckw-Vf-Sh5" kind="show" id="LZZ-Ty-mK8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eg9-9M-yV9">
-                                <rect key="frame" x="283" y="380" width="34" height="30"/>
+                                <rect key="frame" x="279" y="380" width="42" height="35"/>
                                 <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="backButtonClicked:" destination="Vdi-fj-mVR" eventType="touchUpInside" id="cZw-Ve-eNG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Tip Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dR-ac-d2e">
+                                <rect key="frame" x="203" y="114" width="195" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.43914741299999999" green="1" blue="0.31344376959999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="2dR-ac-d2e" firstAttribute="centerX" secondItem="zHt-hL-Se4" secondAttribute="centerX" id="9e4-Ns-T25"/>
                             <constraint firstItem="eg9-9M-yV9" firstAttribute="centerX" secondItem="zHt-hL-Se4" secondAttribute="centerX" id="O9I-ie-j8W"/>
                             <constraint firstItem="UWV-8M-m18" firstAttribute="centerY" secondItem="zHt-hL-Se4" secondAttribute="centerY" id="Q6i-lz-jBq"/>
                             <constraint firstItem="eg9-9M-yV9" firstAttribute="top" secondItem="UWV-8M-m18" secondAttribute="bottom" constant="54" id="QNG-EO-7bP"/>
                             <constraint firstItem="UWV-8M-m18" firstAttribute="centerX" secondItem="zHt-hL-Se4" secondAttribute="centerX" id="WgB-57-PQc"/>
+                            <constraint firstItem="2dR-ac-d2e" firstAttribute="top" secondItem="ScY-pM-8sz" secondAttribute="bottom" constant="50" id="skY-ir-MBD"/>
                             <constraint firstItem="UWV-8M-m18" firstAttribute="centerX" secondItem="zHt-hL-Se4" secondAttribute="centerX" id="x2K-iL-ibA"/>
                         </constraints>
                     </view>
@@ -86,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="3629" y="329"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Landscape Navigation Controller-->
         <scene sceneID="kj5-94-Jaa">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hks-rC-HTW" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hks-rC-HTW" customClass="LandscapeNavigationController" customModule="OrientationDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MhU-UG-Zgq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -103,7 +114,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGH-lc-U1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1864" y="329"/>
+            <point key="canvasLocation" x="1750" y="347"/>
         </scene>
     </scenes>
 </document>

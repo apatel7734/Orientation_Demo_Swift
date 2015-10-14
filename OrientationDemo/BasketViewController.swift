@@ -27,8 +27,6 @@ class BasketViewController: UIViewController {
 
 }
 
-
-
 extension UINavigationController{
     public override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.Portrait

@@ -57,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2059" y="312"/>
+            <point key="canvasLocation" x="2118" y="312"/>
         </scene>
         <!--Enter Card View Controller-->
         <scene sceneID="Erf-Jv-cep">
@@ -147,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="496" y="321"/>
         </scene>
-        <!--Landscape Navigation Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="GKx-fD-sPL">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CFz-or-CQa" customClass="LandscapeNavigationController" customModule="OrientationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CFz-or-CQa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qRR-Kd-0wi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

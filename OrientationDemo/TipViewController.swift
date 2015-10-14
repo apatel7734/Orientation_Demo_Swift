@@ -24,5 +24,4 @@ class TipViewController: UIViewController {
     @IBAction func backButtonClicked(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-
 }

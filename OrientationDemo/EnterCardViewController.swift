@@ -17,14 +17,14 @@ class EnterCardViewController: UIViewController {
     
     @IBAction func nextClicked(sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Tips", bundle: nil)
-        if let tipViewController = storyboard.instantiateInitialViewController() as? TipViewController{
-            self.navigationController?.pushViewController(tipViewController, animated: true);
+        if let tipViewController = storyboard.instantiateInitialViewController(){
+//            self.navigationController?.pushViewController(tipViewController, animated: true);
+            self.presentViewController(tipViewController, animated: true, completion: nil)
         }
     }
     
     @IBAction func backButtonClicked(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
     
 }
