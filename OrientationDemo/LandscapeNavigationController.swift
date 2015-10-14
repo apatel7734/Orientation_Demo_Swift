@@ -1,14 +1,14 @@
 //
-//  ViewController3.swift
+//  LandscapeNavigationController.swift
 //  OrientationDemo
 //
-//  Created by Patel, Ashish on 10/13/15.
+//  Created by Patel, Ashish on 10/14/15.
 //  Copyright © 2015 Patel, Ashish. All rights reserved.
 //
 
 import UIKit
 
-class TipViewController: UIViewController {
+class LandscapeNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +21,8 @@ class TipViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func backButtonClicked(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.LandscapeLeft
     }
 
 }

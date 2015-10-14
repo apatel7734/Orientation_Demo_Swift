@@ -1,14 +1,14 @@
 //
-//  ViewController3.swift
+//  BasketViewController.swift
 //  OrientationDemo
 //
-//  Created by Patel, Ashish on 10/13/15.
+//  Created by Patel, Ashish on 10/14/15.
 //  Copyright © 2015 Patel, Ashish. All rights reserved.
 //
 
 import UIKit
 
-class TipViewController: UIViewController {
+class BasketViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,4 +25,12 @@ class TipViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
+}
+
+
+
+extension UINavigationController{
+    public override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.Portrait
+    }
 }

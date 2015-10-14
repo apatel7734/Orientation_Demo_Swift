@@ -15,16 +15,11 @@ class EnterCardViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        return UIInterfaceOrientationMask.Portrait
-    }
-    
-    
     @IBAction func nextClicked(sender: AnyObject) {
         let storyboard = UIStoryboard(name: "Tips", bundle: nil)
-        let navigationVC = storyboard.instantiateInitialViewController()
-        self.presentViewController(navigationVC!, animated: true, completion: nil)
+        if let tipViewController = storyboard.instantiateInitialViewController() as? TipViewController{
+            self.navigationController?.pushViewController(tipViewController, animated: true);
+        }
     }
     
     @IBAction func backButtonClicked(sender: AnyObject) {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		482AAD791BCECB6A00FD4404 /* LandscapeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482AAD781BCECB6A00FD4404 /* LandscapeNavigationController.swift */; settings = {ASSET_TAGS = (); }; };
+		482AAD7B1BCECE6E00FD4404 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482AAD7A1BCECE6E00FD4404 /* BasketViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		4871D4D51BCDA91B00C174DA /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4871D4D41BCDA91B00C174DA /* TipViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		4882C1C81BC4977800BB7704 /* Tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4882C1C71BC4977800BB7704 /* Tips.storyboard */; settings = {ASSET_TAGS = (); }; };
 		4891941B1BC04FC700136BAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4891941A1BC04FC700136BAB /* AppDelegate.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		482AAD781BCECB6A00FD4404 /* LandscapeNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeNavigationController.swift; sourceTree = "<group>"; };
+		482AAD7A1BCECE6E00FD4404 /* BasketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 		4871D4D41BCDA91B00C174DA /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 		4882C1C71BC4977800BB7704 /* Tips.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tips.storyboard; sourceTree = "<group>"; };
 		489194171BC04FC700136BAB /* OrientationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrientationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +116,8 @@
 				489194231BC04FC700136BAB /* LaunchScreen.storyboard */,
 				489194261BC04FC700136BAB /* Info.plist */,
 				4871D4D41BCDA91B00C174DA /* TipViewController.swift */,
+				482AAD781BCECB6A00FD4404 /* LandscapeNavigationController.swift */,
+				482AAD7A1BCECE6E00FD4404 /* BasketViewController.swift */,
 			);
 			path = OrientationDemo;
 			sourceTree = "<group>";
@@ -265,10 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				482AAD7B1BCECE6E00FD4404 /* BasketViewController.swift in Sources */,
 				4891941D1BC04FC700136BAB /* SelectPaymentCardViewController.swift in Sources */,
 				4891941B1BC04FC700136BAB /* AppDelegate.swift in Sources */,
 				4871D4D51BCDA91B00C174DA /* TipViewController.swift in Sources */,
 				489194491BC050EC00136BAB /* EnterCardViewController.swift in Sources */,
+				482AAD791BCECB6A00FD4404 /* LandscapeNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

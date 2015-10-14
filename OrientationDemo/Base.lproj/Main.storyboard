@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CFz-or-CQa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VPL-wu-gWg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -24,15 +24,16 @@
                                     <constraint firstAttribute="height" constant="53" id="0hp-ep-6fT"/>
                                     <constraint firstAttribute="width" constant="178" id="OKY-DV-VHW"/>
                                 </constraints>
-                                <state key="normal" title="Manually Enter Card"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Enter Card"/>
                                 <connections>
                                     <action selector="nextViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UBa-Iy-sIw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Payment Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdR-1a-kUJ">
-                                <rect key="frame" x="212" y="139" width="177" height="21"/>
+                                <rect key="frame" x="172" y="139" width="257" height="30"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -46,11 +47,17 @@
                             <constraint firstItem="rRO-lf-yNG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qrb-i4-CRM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Select Payment Screen" id="kHH-Qf-ckE"/>
+                    <navigationItem key="navigationItem" title="Select Payment Screen" id="kHH-Qf-ckE">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="W33-W5-qde">
+                            <connections>
+                                <action selector="cancelButtonClicked:" destination="BYZ-38-t0r" id="CQE-d5-dzg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1030" y="339"/>
+            <point key="canvasLocation" x="2059" y="312"/>
         </scene>
         <!--Enter Card View Controller-->
         <scene sceneID="Erf-Jv-cep">
@@ -65,35 +72,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrQ-pn-Bui">
-                                <rect key="frame" x="284" y="285" width="32" height="30"/>
+                                <rect key="frame" x="279" y="282" width="42" height="36"/>
                                 <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextClicked:" destination="YaF-eC-aMu" eventType="touchUpInside" id="ER4-Dk-oj4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Card Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFe-EH-zLL">
-                                <rect key="frame" x="231" y="133" width="140" height="21"/>
+                                <rect key="frame" x="200" y="133" width="201" height="30"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZA-0F-6d5">
-                                <rect key="frame" x="283" y="382" width="34" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <action selector="backButtonClicked:" destination="YaF-eC-aMu" eventType="touchUpInside" id="Q9g-aR-KIo"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="1" green="0.60297111742424248" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="QZA-0F-6d5" firstAttribute="centerX" secondItem="Cuj-wO-klq" secondAttribute="centerX" id="BYm-4M-n9g"/>
                             <constraint firstItem="FrQ-pn-Bui" firstAttribute="centerX" secondItem="Cuj-wO-klq" secondAttribute="centerX" id="CsP-lF-CwT"/>
-                            <constraint firstItem="QZA-0F-6d5" firstAttribute="top" secondItem="FrQ-pn-Bui" secondAttribute="bottom" constant="67" id="Ipf-nx-tAC"/>
                             <constraint firstItem="RFe-EH-zLL" firstAttribute="centerX" secondItem="Cuj-wO-klq" secondAttribute="centerX" id="Qiz-H1-Ja5"/>
                             <constraint firstItem="RFe-EH-zLL" firstAttribute="top" secondItem="Apn-OJ-bbk" secondAttribute="bottom" constant="113" id="udk-vq-Y4J"/>
                             <constraint firstItem="FrQ-pn-Bui" firstAttribute="centerY" secondItem="Cuj-wO-klq" secondAttribute="centerY" id="zip-xx-paU"/>
@@ -102,12 +100,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0C-OT-Rki" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1866" y="339"/>
+            <point key="canvasLocation" x="2829" y="312"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Basket-->
+        <scene sceneID="as2-dm-21q">
+            <objects>
+                <viewController id="5jS-BM-HlB" customClass="BasketViewController" customModule="OrientationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7cS-fU-lRR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qx4-tG-wAv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eNv-3e-rhr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGp-Zk-rBP">
+                                <rect key="frame" x="220" y="279" width="161" height="42"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Charge Button"/>
+                                <connections>
+                                    <action selector="backButtonClicked:" destination="5jS-BM-HlB" eventType="touchUpInside" id="4br-R6-sjn"/>
+                                    <segue destination="CFz-or-CQa" kind="presentation" id="eTn-TM-Qv2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basket Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VP-Of-gjI">
+                                <rect key="frame" x="205" y="84" width="190" height="36"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RGp-Zk-rBP" firstAttribute="centerY" secondItem="eNv-3e-rhr" secondAttribute="centerY" id="f3G-Iv-I0M"/>
+                            <constraint firstItem="0VP-Of-gjI" firstAttribute="top" secondItem="7cS-fU-lRR" secondAttribute="bottom" constant="20" id="phs-OV-qLX"/>
+                            <constraint firstItem="0VP-Of-gjI" firstAttribute="centerX" secondItem="eNv-3e-rhr" secondAttribute="centerX" id="xpM-yT-ttz"/>
+                            <constraint firstItem="RGp-Zk-rBP" firstAttribute="centerX" secondItem="eNv-3e-rhr" secondAttribute="centerX" id="yuG-54-IOE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Basket" id="dFN-Y7-cRR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PVE-Cs-Eng" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="496" y="321"/>
+        </scene>
+        <!--Landscape Navigation Controller-->
         <scene sceneID="GKx-fD-sPL">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CFz-or-CQa" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CFz-or-CQa" customClass="LandscapeNavigationController" customModule="OrientationDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qRR-Kd-0wi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -121,7 +164,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IhI-bg-0l0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="218" y="339"/>
+            <point key="canvasLocation" x="1322" y="312"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X8h-lX-xOz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VPL-wu-gWg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pUv-1M-IlN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5jS-BM-HlB" kind="relationship" relationship="rootViewController" id="qA1-zD-nBT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Hy-ge-iGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-316" y="321"/>
         </scene>
     </scenes>
 </document>
